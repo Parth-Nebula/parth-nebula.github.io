@@ -59,7 +59,7 @@ function allThestuff(){
             
           resolve(sha512("123456/user.friends?apiKey="+ xxx + "&time=" + times + "#" + yyy));
             
-        }, 50);
+        }, 200);
           
       });
         
@@ -73,7 +73,7 @@ function allThestuff(){
             
           resolve(sha512("123456/user.friends?apiKey=" + xxx + "&onlyOnline=true&time=" + times + "#" + yyy));
             
-        }, 50);
+        }, 200);
           
       });
         
