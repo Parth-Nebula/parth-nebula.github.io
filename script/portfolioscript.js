@@ -285,7 +285,7 @@ function getData(){
             
         }
         
-        else if ((data.result)[0].maxrating < 2600 )
+        else if ((data.result)[0].maxRating < 2600 )
         {
                 
             document.getElementById("maxRating").style.color = "red";
