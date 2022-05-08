@@ -71,7 +71,7 @@ function getData(){
         else if ((data.result)[0].rating < 2400 )
         {
                 
-            document.getElementById("rating").style.color = "#ff8800e";
+            document.getElementById("rating").style.color = "#ff8800";
             
         }
         
@@ -141,7 +141,7 @@ function getData(){
         else if ((data.result)[0].rating < 2400 )
         {
                 
-            document.getElementById("rankTitle").style.color = "#ff8800e";
+            document.getElementById("rankTitle").style.color = "#ff8800";
             
         }
         
