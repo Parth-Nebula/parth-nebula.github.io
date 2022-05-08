@@ -19,78 +19,87 @@ function getData(){
         var cell1;
         
         var cell2;
+        
+        var rownumber = 0; 
+                      
+                   
 
-        for (let iiii = 0 ; iiii< (data.result.length) ; iiii++)
-        {
             
-            if (iiii >3 )
-                {
-                    break;
-                }
-                
-            function resolveThisplease() {
-            
-                return new Promise(resolve => {
-                setTimeout(() => {
-                    
-                    
-                    url = "https://codeforces.com/api/blogEntry.comments?blogEntryId=" + data.result[iiii].id;
+        function resolveThisplease() {
 
-                    fetch(url).then((response1)=>{
+            return new Promise(resolve => {
+            setTimeout(() => {
 
-                        return response1.json();
 
-                    }).then((data1)=>{
+                url = "https://codeforces.com/api/blogEntry.comments?blogEntryId=" + data.result[iiii].id;
 
-                        
-                        resolve(data1);
+                fetch(url).then((response1)=>{
 
-                    })
-                    
-                    
-                    
-                
-                }, 100);
-              
-                });
-            }
-            
-            
-            async function asyncCall() {
-                
-                console.log('calling');
-                
-                const result = await resolveThisplease();
-                
-                row = table.insertRow(iiii);
+                    return response1.json();
 
-                cell1 = row.insertCell(0);
+                }).then((data1)=>{
 
-                cell2 = row.insertCell(1);
 
-                cell1.innerHTML = (data.result)[iiii].title;
-                
-                cell2.innerHTML = result.result[0].text;
-                
-                
-                
-            }
-            
-            asyncCall();
-                          
+                    resolve(data1);
+
+                })
+
+
+
+
+            }, 100);
+
+            });
         }
-                
-                
-                
-                
-                
-        
-        
 
 
+        async function asyncCall() {
+
+            console.log('calling');
+
+            const result = await resolveThisplease();
+
+            row = table.insertRow(rownumber);
+
+            rownumber+=1;
+
+            cell1 = row.insertCell(0);
+
+            cell2 = row.insertCell(1);
+
+            cell1.innerHTML = (data.result)[iiii].title;
+
+            cell2.innerHTML = result.result[0].text;
+
+
+
+        }
+        
         
             
             
+        var iiii = 0;                 
+
+        function myLoop() {         
+          
+            setTimeout(function() {   
+              
+            asyncCall();   
+              
+            iiii++;
+                
+            if (iiii < data.result.length) { 
+                
+              myLoop();
+                
+            }    
+                
+          }, 1000)
+            
+        }
+
+        myLoop();                   
+        
         
     })
 }
