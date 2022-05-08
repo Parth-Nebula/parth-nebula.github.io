@@ -1,0 +1,71 @@
+.backdrop
+{
+    height: 96vh;
+    width: 99vw;
+
+    
+    position: absolute;
+    
+    z-index: -1;
+
+}
+
+.backdropRed
+{
+    height: 96vh;
+    width: 99vw;
+    
+    position: absolute;
+    
+    top:  0%;
+    left: 0%;
+    
+    z-index: -1;
+
+    
+}
+
+.backdropRedimage
+{
+    opacity: 0.5;
+    
+    z-index: -1;
+}
+
+.backdropBlue
+{
+    height: 96vh;
+    width: 99vw;
+    
+    position: absolute;
+    
+    top: 0%;
+    left: 0%;
+    
+    z-index: -1;
+    
+}
+
+.backdropBlueimage
+{
+    opacity: 0.5;
+    
+    z-index: -1;
+}
+
+.form
+{
+    position: absolute;
+    
+    top: 30%;
+    left: 40%;
+
+}
+
+.button
+{
+    position: absolute;
+    
+    top: 60%;
+    left: 44%;
+}

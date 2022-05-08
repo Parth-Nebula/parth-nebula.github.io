@@ -1,0 +1,106 @@
+.backdrop
+{
+    height: 96vh;
+    width: 99vw;
+
+    
+    position: absolute;
+    
+    z-index: -1;
+
+}
+
+.backdropRed
+{
+    height: 96vh;
+    width: 99vw;
+    
+    position: absolute;
+    
+    top:  0%;
+    left: 0%;
+    
+    z-index: -1;
+
+    
+}
+
+.backdropRedimage
+{
+    opacity: 0.5;
+    
+    z-index: -1;
+}
+
+.backdropBlue
+{
+    height: 96vh;
+    width: 99vw;
+    
+    position: absolute;
+    
+    top: 0%;
+    left: 0%;
+    
+    z-index: -1;
+    
+}
+
+.backdropBlueimage
+{
+    opacity: 0.5;
+    
+    z-index: -1;
+}
+
+.page
+{
+    
+    height: 96vh;
+    width: 99vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    font-family: 'Sintony', sans-serif;
+    
+    font-weight: 900;
+    
+    font-size: 1.5vw;
+    
+}
+
+.chartCanvas
+{
+        
+    display: inline-block;
+    position: relative;
+    width: 50%;
+}
+
+.contestButton
+{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.blogButton
+{
+    position: absolute;
+    right: 2%;
+    top: 6%;
+}
+
+.backButton
+{
+    position: absolute;
+    
+    top: 3%;
+    left: 1%;
+    
+    height: 45px;
+    width: 60px;
+}
+

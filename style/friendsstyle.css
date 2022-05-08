@@ -1,0 +1,78 @@
+.backdrop
+{
+    height: 96vh;
+    width: 99vw;
+
+    
+    position: absolute;
+    
+    z-index: -1;
+
+}
+
+.backdropRed
+{
+    height: 96vh;
+    width: 99vw;
+    
+    position: absolute;
+    
+    top:  0%;
+    left: 0%;
+    
+    z-index: -1;
+
+    
+}
+
+.backdropRedimage
+{
+    opacity: 0.5;
+    
+    z-index: -1;
+}
+
+.backdropBlue
+{
+    height: 96vh;
+    width: 99vw;
+    
+    position: absolute;
+    
+    top: 0%;
+    left: 0%;
+    
+    z-index: -1;
+    
+}
+
+.backdropBlueimage
+{
+    opacity: 0.5;
+    
+    z-index: -1;
+}
+
+.heading
+{
+    height: 90px;
+    width: 180px;
+    
+    z-index: 0;
+}
+
+.tableDiv
+{
+    font-size: 20px;
+}
+
+.backButton
+{
+    position: absolute;
+    
+    top: 3%;
+    left: 1%;
+    
+    height: 45px;
+    width: 60px;
+}
